@@ -1,0 +1,16 @@
+<div class="uk-container uk-container-expand">
+    <div class="uk-grid-small" uk-grid>
+        <div class="uk-width-1-6@m">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="uk-width-expand">
+            <app-filter [searchForm]="searchForm" [flights]="allFlights"></app-filter>
+            <div>
+                <div class="uk-child-width-1-2" uk-grid>
+                    <div class="uk-card uk-card-default uk-card-body"></div>
+                    <div class="uk-card uk-card-default uk-card-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

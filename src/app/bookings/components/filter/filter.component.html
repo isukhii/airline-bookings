@@ -1,0 +1,24 @@
+<form [formGroup]="searchForm" class="uk-form-stacked">
+    <div class="uk-grid-small uk-child-width-expand uk-flex uk-flex-middle m-l-15 m-r-15" uk-grid>
+        <div class="uk-form-controls">
+            <input formControlName="departure" placeholder="Departure" [typeahead]="departures" class="form-control"
+                [typeaheadOptionsLimit]="7">
+        </div>
+        <div class="uk-form-controls">
+            <input formControlName="arrival" placeholder="Arrival" [typeahead]="arrivals" class="form-control"
+                [typeaheadOptionsLimit]="7">
+        </div>
+        <div class="uk-form-controls">
+            <input type="text" formControlName="date" placeholder="Date" class="form-control" bsDatepicker>
+        </div>
+        <div class="uk-form-controls">
+            <div class="custom-slider">
+                <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+            </div>
+        </div>
+        <div>
+            <button class="uk-button uk-button-primary uk-button-small" (click)="search()">Search
+            </button>
+        </div>
+    </div>
+</form>

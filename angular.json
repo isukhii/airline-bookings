@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "./node_modules/uikit/src/scss"
+              ]
+            },
+            "scripts": [
+              "./node_modules/uikit/dist/js/uikit.min.js",
+              "./node_modules/uikit/dist/js/uikit-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,6 +103,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +136,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "airline-bookings"
 }
